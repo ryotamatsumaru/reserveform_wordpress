@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+body{
+  background: #333;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-area {
+  width: 850px;
+  margin-top: 30px;
+  margin-bottom: 20px;  
+}
+
+.text-area .text,
+.text-area .caution {
+  margin: 0 auto; 
+  margin-top: 12px;
+  text-align: center;
+}
+
+.text-area .title{
+  color: #fff;
+  text-align: center;
+}
+
+#list {
+  border-top: solid 1px #DDD;
+  width: 850px;
+  margin-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+#list .field-flex {
+  display: flex;
+  margin: 0;
+  background-color: #555;
+  border-right: solid 1px #DDD;
+  border-bottom: solid 1px #DDD; 
+}
+
+#list .field {
+  border-left: solid 1px #DDD; 
+  width: 120px;
+  color: #fff;
+  text-align: center;
+}
+
+#list .field:nth-child(6){
+  border-right: solid 1px #DDD; 
+}
+
+
+#list .list-flex{
+  color: #fff;
+  border-left: solid 1px #DDD;
+  border-right: solid 1px #DDD; 
+  background-color: #555;
+  display: flex;
+  margin: 0;
+  border-bottom: solid 1px #DDD; 
+}
+
+#list .list-flex li{
+  width: 120px;
+  height: 40px;
+  padding-top: 20px;
+  /* line-height: 60px; */
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+#book-select {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#book-select .title,
+#book-divide .title {
+  color: #fff;
+  text-align: center;
+}
+
+#book-select .info-field-flex,
+#book-select .info-flex {
+  display: flex;
+  color: #fff;
+  margin: 0;
+  justify-content: center;
+}
+
+#book-select .info-field-flex li{
+  width: 100%;
+  border-left: solid 1px #fff;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  text-align: center;
+}
+
+#book-select .info-flex li{
+  width: 100%;
+  border-left: solid 1px #fff;
+  /* border-right: solid 1px #fff; */
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+#book-select .info-field-flex li:nth-child(4),
+#book-select .info-flex li:nth-child(4) {
+  border-right: solid 1px #fff;
+}
+
+#book-select .list-flex {
+  color: #fff;
+  border-top: solid 1px #fff;
+  background-color: #555;
+  /* width: 600px; */
+  margin: 0;
+}
+
+#book-select .list-flex .flex{
+  display: flex;
+  border-bottom: solid 1px #fff;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#book-select .list-flex li{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#book-select .list-flex .date,
+#book-select .list-flex .price,
+#book-select .list-flex .subtotal{
+  width: 50%;
+}
+
+#book-select .list-flex .name{
+  width: 120%;
+}
+
+#book-select .list-flex .room,
+#book-select .list-flex .check{
+  width: 40%;
+}
+
+#book-select .submit {
+  margin-top: 12px;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#book-divide {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#book-divide .info-flex{
+  display: flex;
+  color: #fff;
+  border: solid 1px #DDD;
+  background-color: #444;
+}
+
+#book-divide .info-flex li{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  /* border: solid 1px #fff; */
+  text-align: center;
+}
+
+#book-divide .button-area{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100px;
+}
+
+#book-divide .submit,
+#book-divide .delete {
+  margin-top: 12px;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 0.9rem;
+  /* display: block; */
+  margin: 0 auto;
+}
+
+#book-divide .delete{
+  margin-left: 10px;
+}
+
+#not-set-value {
+  width: 700px;
+  margin-top: 100px;
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 20px 0;
+}
+

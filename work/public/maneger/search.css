@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* body{
+  margin: 0;
+} */
+
+/* .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+} */
+
+#invalid {
+  width: 700px;
+  margin-top: 100px;
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wrapper2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-menu-area{
+  margin-top: 100px;
+}
+
+#search {
+  width: 900px;
+  margin: 80px auto;
+}
+
+#search .back{
+  display: block;
+  margin-bottom: 20px;
+}
+#search .box{
+  border: solid 1px #ddd;
+}
+
+#search p{
+  margin: 0;
+  margin-top: 8px;
+}
+
+#search .search-form{
+  border-bottom: solid 1px #ddd;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+#search .search-form .submit{
+  border: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+#search .note {
+  text-align: center;
+}
+
+#search .field-flex {
+  display: flex;
+  margin: 0;
+  border-top: solid 1px #DDD; 
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#search .field-flex li{
+  width: 100%;
+  height: 30px;
+  border-left: solid 1px #DDD;
+  line-height: 30px;
+  text-align: center;
+  background-color: #eee;
+}
+
+#search .info-flex {
+  display: flex;
+  margin: 0;
+  border-top: solid 1px #DDD; 
+  border-bottom: solid 1px #DDD; 
+  font-size: 0.75rem;
+}
+
+#search .info-flex li{
+  width: 100%;
+  height: 60px;
+  border-left: solid 1px #DDD;
+  line-height: 60px;
+  text-align: center;
+}
+
+#search .field-flex .room,
+#search .field-flex .night,
+#search .info-flex .room,
+#search .info-flex .night {
+  width: 30%;
+}
+
+#search .field-flex .price,
+#search .field-flex .date,
+#search .info-flex .price,
+#search .info-flex .date {
+  width: 50%;
+}
+
+#search .field-flex .random,
+#search .info-flex .random,
+#search .field-flex .type,
+#search .info-flex .type {
+  width: 65%;
+}
+
+#search .field-flex .tel,
+#search .info-flex .tel {
+  width: 70%;
+}
+
+#search .field-flex .mail,
+#search .info-flex .mail {
+  width: 120%;
+}
+
+#search .field-flex li:nth-child(1),
+#search .info-flex li:nth-child(1) {
+  border-left: none;
+}
+
+#search .refer {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  font-size: 0.9rem;
+  display: block;
+  height: 25px;
+  width:50px;
+  line-height: 20px;
+}
+
+#select {
+  width: 900px;
+  margin: 80px auto;
+}
+
+#select .info-flex,
+#select .field-flex {
+  display: flex;
+  margin: 0;
+  border-bottom: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+}
+
+#select .field-flex{
+  background-color: #eee;
+  border-top: solid 1px #ddd;
+  font-weight: bold;
+}
+
+#select .info-flex li,
+#select .field-flex li {
+  width: 100%;
+  height: 40px;
+  border-right: solid 1px #ddd;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+} 
+
+#select .info-flex .checkbox,
+#select .field-flex .checkbox{
+  width: 30%;
+}
+
+#select .field-flex .room,
+#select .field-flex .night,
+#select .info-flex .room,
+#select .info-flex .night {
+  width: 40%;
+}
+
+#select .field-flex .price,
+#select .field-flex .date,
+#select .info-flex .price,
+#select .info-flex .date {
+  width: 50%;
+}
+
+#select .field-flex .random,
+#select .info-flex .random,
+#select .field-flex .type,
+#select .info-flex .type {
+  width: 60%;
+} 
+
+#select .submit{
+  border: none;
+  border: 1px solid #DDD;
+  background: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+#divide {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+#divide .field-flex{
+  display: flex;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  background-color: #eee;
+  font-weight: bold;
+}
+
+#divide .field-flex li {
+  width: 100%;
+  height: 30px;
+  border-right: solid 1px #ddd;
+  line-height: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+} 
+
+#divide .field-flex,
+#divide .info-flex {
+  display: flex;
+  border: solid 1px #ddd;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#divide .field-flex li,
+#divide .info-flex li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+} 
+
+#divide .info-flex .name-bar{
+  width: 140px;
+}
+
+#divide .info-flex .room-bar{
+  width: 20px;
+}
+
+#divide .info-flex .price-bar{
+  width: 60px;
+}
+
+#divide .info-flex .tel-bar {
+  width: 100px;
+}
+
+#divide .info-flex .mail-bar{
+  width: 180px;
+}
+
+#divide .field-flex .room,
+#divide .field-flex .night,
+#divide .info-flex .room,
+#divide .info-flex .night {
+  width: 30%;
+}
+
+#divide .field-flex .price,
+#divide .field-flex .date,
+#divide .info-flex .price,
+#divide .info-flex .date {
+  width: 50%;
+}
+
+#divide .field-flex .random,
+#divide .info-flex .random,
+#divide .field-flex .type,
+#divide .info-flex .type {
+  width: 65%;
+}
+
+#divide .field-flex .tel,
+#divide .info-flex .tel {
+  width: 70%;
+}
+
+#divide .field-flex .mail,
+#divide .info-flex .mail {
+  width: 120%;
+}
+
+#divide .button-area{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100px;
+}
+
+#divide .submit,
+#divide .delete {
+  margin-top: 12px;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+#divide .delete{
+  margin-left: 10px;
+}
+
+#not-set-value {
+  width: 700px;
+  margin-top: 100px;
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 20px 0;
+}

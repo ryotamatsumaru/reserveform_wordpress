@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+body{
+  background: #333;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#reserve-list {
+  /* border: solid 1px #fff; */
+  width: 800px;
+  margin: 80px auto 100px;
+}
+
+#reserve-list #list {
+  border-top: solid 1px #DDD;
+  margin-top: 20px;
+}
+
+#reserve-list .nolist {
+  margin-top: 100px;
+  padding: 50px 0 60px;
+  text-align: center;
+  border: solid 1px #fff;
+}
+
+#reserve-list #list .list-flex {
+  color: #fff;
+  border-left: solid 1px #DDD;
+  border-right: solid 1px #DDD; 
+  background-color: #555;
+  display: flex;
+  margin: 0;
+  border-bottom: solid 1px #DDD; 
+}
+
+#reserve-list #list .list-flex li{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+#reserve-list #list .delete-tag {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#reserve-list .delete-form {
+  /* width: 700px; */
+  margin-top: 12px;
+}
+
+#reserve-list .delete {
+  margin-top: 12px;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 0.9rem;
+}
+
+#reserve-list .total-area {
+  width: 700px;
+}
+
+#reserve-list .total-area .total{
+  font-size: 1.5rem;
+  border-bottom: solid 2px #DDD;
+}
+
+#reserve-list .back {
+  color: #fff;
+}
+
+    /*tabの形状*/
+  #reserve-list .tab{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    gap: 10px;
+  }
+    
+  #reserve-list .tab li{
+    width: 260px;
+    text-align: center;
+  }
+
+  #reserve-list .tab li a{
+    display: block;
+    background: #555;
+    padding:10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+    /*liにactiveクラスがついた時の形状*/
+    #reserve-list .tab li.active a{
+    background:#444;
+  }
+  
+  /*エリアの表示非表示と形状*/
+  #reserve-list .area {
+    display: none;/*はじめは非表示*/
+    opacity: 0;/*透過0*/
+    background: #fff;
+    padding:50px 20px;
+  }
+  
+  /*areaにis-activeというクラスがついた時の形状*/
+  #reserve-list .area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes displayAnime{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+#reserve-list .reserve-info,
+#reserve-list .note {
+  color: #333;
+}
+
+#reserve-list #reserve1,
+#reserve-list #reserve2,
+#reserve-list #reserve3 {
+  background-color: #EEE;
+}
+
+#reserve-list #reserve1 .reserve-info,
+#reserve-list #reserve2 .reserve-info,
+#reserve-list #reserve3 .reserve-info{
+  margin: 0;
+  margin-top: 8px;
+}
+
+#reserve-list #mail,
+#reserve-list #mail2, 
+#reserve-list #roma {
+  width: 200px;
+}
+
+#reserve-list #reserve1 .submit,
+#reserve-list #reserve2 .submit,
+#reserve-list #reserve3 .submit {
+  margin-top: 12px;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 1rem;
+}
