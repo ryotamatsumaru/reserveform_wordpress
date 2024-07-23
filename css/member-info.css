@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+html {
+  margin: 0;
+  background-color: #000011;
+}
+
+body {
+  margin: 0;
+  background-color: #000011;
+}
+
+main {
+  background-color: #000011;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  padding-top: 110px;
+}
+
+#invalid {
+  width: 700px;
+  margin: 160px auto;
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#invalid .caution{
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+#member-info{
+  width: 700px;
+  margin: 80px auto 100px;
+  border: solid 2px #fff;
+  padding-bottom: 20px;
+}
+
+#member-info .title{
+  color: #fff;
+  margin: 20px auto;
+}
+
+#member-info .field{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#member-info .field li {
+margin-top: 40px;
+border-bottom: 1px solid #fff;
+color: #fff;
+}
+
+#member-info .back{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#leave{
+  width: 700px;
+  margin: 60px auto 80px;
+  border: solid 2px #fff;
+  padding: 20px 0;
+}
+
+#member-info .title,
+#leave .title{
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+#leave .text-area {
+  width: 510px;
+  margin: 0 auto;
+}
+
+#leave .submit {
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+#leave .back {
+  color: #fff;
+  display: block;
+  margin-left: 96px;
+  /* margin: 20px auto 0;
+  text-align: center; */
+}
+
+#leave-done {
+  width: 700px;
+  border: solid 2px #DDD;
+  margin: 100px auto;
+  padding: 80px 0;
+}
+
+#leave-done .done-text{
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+#leave-done .back {
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  margin-left: 4px;
+  text-align: center;
+}

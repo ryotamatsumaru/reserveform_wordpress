@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+html {
+  margin: 0;
+  background-color: #000011;
+}
+
+body {
+  margin: 0;
+  background-color: #000011;
+}
+
+main {
+  background-color: #000011;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ログインを促す警告ページのCSS */
+#login-caution {
+  width: 700px;
+  margin: 160px auto;
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#login-caution .caution{
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+
+#invalid {
+  width: 700px;
+  margin: 160px auto;
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#invalid .caution{
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+section {
+  padding-top: 110px;
+}
+
+#login,
+#menu {
+  margin: 100px auto;
+}
+
+#login .login-form,
+#menu .menu-form {
+  width: 700px;
+  border: solid 2px #BBB;
+  padding: 20px 0;
+  margin: 0 auto;
+  background-color: #444;
+}
+
+#login .title,
+#menu .title{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#login .bar-text{
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+#login .bar{
+  margin: 0;
+  width: 180px;
+}
+
+#login .submit {
+  margin-top: 30px;
+  display: block;
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 1rem;
+}
+
+#login .center{
+  width: 180px;
+  margin: 0 auto;
+}
+
+#login .note-area {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#login-check {
+  width: 700px;
+  margin: 100px auto;
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#menu .center {
+  width: 120px;
+  margin: 0 auto;
+}
+
+#logout {
+  width: 700px;
+  border: solid 2px #DDD;
+  margin: 100px auto;
+  padding: 80px 0;
+}
+
+#logout .done-text{
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+#logout .back {
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  margin-left: 4px;
+  text-align: center;
+}

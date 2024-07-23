@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+html {
+  margin: 0;
+  background-color: #fff;
+  font-family: serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: black;
+  font-family: serif;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mng-login-caution {
+  width: 700px;
+  margin-top: 250px;
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#mng-login-caution .caution{
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+#con-header .title {
+  text-align: center;
+  margin: 0;
+  height: 80px;
+  line-height: 80px;
+  background-color: #336699;
+  color: #fff;
+}
+
+#login {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: solid 2px #ddd;
+  background-color: #eee;
+}
+
+#login .center-box{
+  width: 200px;
+  margin: 60px auto;
+}
+
+#login .info {
+  margin: 0;
+  margin-top: 4px;
+}
+
+#login .info #id,
+#login .info #password{
+  width: 180px;
+}
+
+#login .submit{
+  background-color: #fff;
+  border: 2px solid #ddd;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#mng-login-check {
+  width: 700px;
+  margin-top: 100px;
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#mng-menu{
+  /* border: solid 1px; */
+  width: 800px;
+}
+
+#mng-menu .menu-board{
+  border: solid 1px #eee;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #eee;
+  height: 700px;
+}
+
+#mng-menu .menu-title,
+#mng-menu .menu-list {
+  margin: 0;
+}
+
+#mng-menu .menu-title{
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#mng-menu .menu-list li{
+  margin-top: 12px;
+  margin-left: 32px;
+}
+
+#mng-menu .menu-list li:nth-child(6){
+  margin-bottom: 20px;
+}
+
+#mng-menu a:hover{
+  text-decoration: none;
+}
+
+#mng-menu a{
+  text-decoration: underline;
+}
+
+#mng-logout {
+  width: 700px;
+  border: solid 2px #DDD;
+  margin-top: 100px;
+  padding: 20px 0 30px;
+}
+
+#mng-logout .done-text{
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 4px;
+  color: black;
+  text-align: center;
+}
+
+#mng-logout .back {
+  color: black;
+  display: block;
+  margin-top: 20px;
+  margin-left: 4px;
+  text-align: center;
+}

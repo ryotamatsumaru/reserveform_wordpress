@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+html {
+  margin: 0;
+  background-color: #000011;
+}
+
+body {
+  margin: 0;
+  background-color: #000011;
+}
+
+main {
+  background-color: #000011;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#invalid {
+  width: 700px;
+  margin: 160px auto;
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#invalid .caution{
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+section {
+  padding-top: 110px;
+}
+
+#reserve-check,
+#member-check,
+#login-check {
+  width: 700px;
+  margin: 80px auto 60px;
+}
+
+#reserve-check .info,
+#member-check .info,
+#login-check .info{
+  border-bottom: solid 1px #DDD;
+  padding-left: 4px;
+}
+
+#reserve-check .caution,
+#member-check .caution {
+  border-bottom: solid 1px #DDD;
+  padding-left: 4px;
+}
+
+
+#list {
+  border-top: solid 1px #DDD;
+  margin-top: 20px;
+}
+
+#list .list-flex {
+  color: #fff;
+  border-left: solid 1px #DDD;
+  border-right: solid 1px #DDD; 
+  background-color: #555;
+  display: flex;
+  margin: 0;
+  border-bottom: solid 1px #DDD; 
+}
+
+#list .list-flex li{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+#reserve-check .total,
+#member-check .total,
+#login-check .total {
+  font-size: 1.5rem;
+  border-bottom: solid 2px #DDD;
+}
+
+#reserve-check .submit,
+#member-check .submit,
+#login-check .submit{
+  background-color: #fff;
+  border: 2px solid #DDD;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#reserve-check .back,
+#member-check .back,
+#login-check .back {
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#login-check .caution-area {
+  border: solid 1px #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+
+#login-check .caution {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+#login-check .back {
+  margin: 0;
+}
+
+#reserve-done,
+#member-done {
+  width: 700px;
+  /* height: 500px; */
+  border: solid 2px #DDD;
+  margin: 100px auto;
+  padding: 20px 0 30px;
+}
+
+#reserve-done .done-text,
+#member-done .done-text{
+  margin: 0;
+  margin-top: 8px;
+  margin-left: 4px;
+  color: #fff;
+}
+
+#reserve-done .back,
+#member-done .back{
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  text-decoration: underline;
+}
+
+
+
