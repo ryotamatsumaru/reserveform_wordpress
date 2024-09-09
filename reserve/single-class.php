@@ -59,8 +59,8 @@ class Single{
     $price_display = array();
   
     foreach($prices as $key => $out){
-      $day_out = strtotime((string) $out['day']);
-      $price_out = (string) $out['price'];
+      $day_out = strtotime($out['day']);
+      $price_out = $out['price'];
       $price_display[date('Y-m-d', $day_out)] = $price_out;
     }
     return $price_display;
