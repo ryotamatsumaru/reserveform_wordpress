@@ -77,7 +77,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
 
   // $date_inv(在庫数)から$books_display(日毎の合計予約数)を引いた値を配列$stockに代入。
   foreach(array_map(null, $books_total, $date_inv) as [$books, $dates]){
-    $stock[] = $dates - $books;
+    $stock[] = $books - $dates;
   }
 
   // $reserve(これから予約する室数)が$stockを超えていれば$checkに0を代入。超えていなければ1を代入する。
