@@ -54,7 +54,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
     $day_out = strtotime($row['day']);
     $book_out = $row['SUM(number)'];
     // 日付をキーにした配列に$book_out(合計予約数)を代入して、1日あたりの予約数が格納される。
-    $books_display[date('Y-m-d', $day_out)] = $book_out;
+    $books_total[date('Y-m-d', $day_out)] = $book_out;
   }
 
   // $periodに代入された宿泊期間とDBの部屋タイプテーブルから日付、在庫数、料金を呼び出してそれぞれの配列に代入する。
@@ -76,7 +76,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
   $total = array_sum($price_array);
 
   // $date_inv(在庫数)から$books_display(日毎の合計予約数)を引いた値を配列$stockに代入。
-  foreach(array_map(null, $books_display, $date_inv) as [$books, $dates]){
+  foreach(array_map(null, $books_total, $date_inv) as [$books, $dates]){
     $stock[] = $dates - $books;
   }
 
