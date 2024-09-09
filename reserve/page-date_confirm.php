@@ -23,10 +23,10 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
   $roomtype = $measure->getRoomtype();
   $type = $measure->getType();
 
-  // $nightに代入された値の数だけ室数($number)を配列reserveに代入。判定用の値1を配列$check2に代入。
+  // $nightに代入された値の数だけ室数($number)を配列reserveに代入。判定用の値1を配列$checkに代入。
   for($roop=1; $roop<=$night; $roop++){
     $reserve[] = $number;
-    $check2[] = 1;
+    $check[] = 1;
   }
 
   $date1 = date('Y-m-d', strtotime($date));
@@ -83,18 +83,18 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
     $stock[] = $dates - $books;
   }
 
-  // $reserve(これから予約する室数)が$stockを超えていれば$checkに0を代入。超えていなければ1を代入する。
+  // $reserve(これから予約する室数)が$stockを超えていれば$check２に0を代入。超えていなければ1を代入する。
   foreach(array_map(null, $stock, $reserve) as [$stocks, $reserves]){
     if($stocks < $reserves){
       // 予約不可;
-      $check[] = 0;
+      $check２[] = 0;
     } else {
       // 可能;
-      $check[] = 1;
+      $check２[] = 1;
     }
   }
 
-  // $check2には泊数に応じて必ず1を代入しているが、$checkには$stockを超えていない場合のみ1を代入させ、html内の$checkと$check2の値1が全て合致しないと予約確認画面を表示させない。
+  // $checkには泊数に応じて必ず1を代入しているが、$check２には$stockを超えていない場合のみ1を代入させ、html内の$checkと$check2の値1が全て合致しないと予約確認画面を表示させない。
   }
 ?>
 
