@@ -48,8 +48,8 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
     $ps->execute();
     $row = $ps->fetch(PDO::FETCH_ASSOC);
     // 予約がない日には0を代入してる。
-    if($row['SUM(member)'] == ''){
-      $row['SUM(member)'] = '0';
+    if($row['SUM(number)'] == ''){
+      $row['SUM(number)'] = '0';
     }
     $day_out = strtotime($row['day']);
     $book_out = $row['SUM(number)'];
