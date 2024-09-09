@@ -52,7 +52,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
       $row['SUM(member)'] = '0';
     }
     $day_out = strtotime($row['day']);
-    $book_out = (string)$row['SUM(number)'];
+    $book_out = $row['SUM(number)'];
     // 日付をキーにした配列に$book_out(合計予約数)を代入して、1日あたりの予約数が格納される。
     $books_display[date('Y-m-d', $day_out)] = $book_out;
   }
