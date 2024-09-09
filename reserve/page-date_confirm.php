@@ -14,7 +14,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
 {
   $date = Measure::h($_POST['dates']);
   $night = Measure::h($_POST['night']);
-  $member = Measure::h($_POST['member']);
+  $number = Measure::h($_POST['number']);
 
   // ランダムな予約IDを作成する変数。
   $random = mt_rand();
