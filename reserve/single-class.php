@@ -23,10 +23,10 @@ class Single{
     {
       // 期間変更
       $this->ym = $_GET['ym'];
-	    $this->timestamp = strtotime($this->ym);
+      $this->timestamp = strtotime($this->ym);
       $this->selectday= date('Ymd', $this->timestamp);
       $this->afterday = date('Ymd', strtotime('+7 day', $this->timestamp));
-	  } elseif(isset($_POST['search_date'])){
+    } elseif(isset($_POST['search_date'])){
       // 日付検索
       $this->ym = date('Y-m', strtotime($_POST['search_date']));
       $this->d = date('-d', strtotime($_POST['search_date']));
