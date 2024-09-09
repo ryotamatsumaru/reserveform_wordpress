@@ -23,7 +23,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
   $roomtype = $measure->getRoomtype();
   $type = $measure->getType();
 
-  // $nightに代入された値の数だけ室数($number)を配列reserveに代入。判定用の値1を配列$checkに代入。
+  // $night(泊数)に代入された値の数だけ$number(室数)を配列reserveに代入。判定用の値1を配列$checkに代入。
   for($roop=1; $roop<=$night; $roop++){
     $reserve[] = $number;
     $check[] = 1;
