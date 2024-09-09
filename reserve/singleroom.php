@@ -27,7 +27,7 @@
 
   function reservation($date,$books_array){
     $type = 'singleroom';
-	  if($date < date('Y-m-d')){
+    if($date < date('Y-m-d')){
       $date = date('Y-m-d');
     }
     $dbh = Database::getPdo();
