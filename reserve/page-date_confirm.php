@@ -65,7 +65,10 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
     $ps2->bindValue(':date', $date3, PDO::PARAM_STR);
     $ps2->execute();
     $row2 = $ps2->fetch(PDO::FETCH_ASSOC);
-
+    // 在庫がない日には0を代入してる。
+    if($row2['inventory'] == ''){
+      $row2['inventory'] = '0';
+    }
     $date_inv[] = $row2['inventory'];
     $day[] = $row2['day'];
     $price[] = $row2['price']; 
