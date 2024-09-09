@@ -96,11 +96,6 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
   }
 ?>
 
-
-<head>
-  <meta charset="utf-8">
-  <link rel= "stylesheet" href="calender.css" >
-</head>
 <section>
   <?php if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['number'])):?>
     <!-- $checkと$check2の1が全て合致しないと予約確認画面を表示させない。 -->
