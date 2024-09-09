@@ -78,7 +78,7 @@ if(!empty($_POST['dates']) && !empty($_POST['night']) && !empty($_POST['member']
   // 合計金額をtotalに代入。
   $total = array_sum($price_array);
 
-  // $date_inv(在庫数)から$books_display(日毎の合計予約数)を引いた値を配列$stockに代入。
+  // $date_inv(在庫数)から$books_total(日毎の合計予約数)を引いた値を配列$stockに代入。
   foreach(array_map(null, $books_total, $date_inv) as [$books, $inventories]){
     $stock[] = $inventories - $books;
   }
