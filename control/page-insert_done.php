@@ -22,7 +22,7 @@ if(isset($_POST['id']) && isset($_POST['confirm'])){
   $sql = 'LOCK TABLES singleroom WRITE';
   $ps = $dbh->prepare($sql);
   $ps->execute();
-	// 日付ごとのidからinventoryカラムとinventory_copyカラムをそれぞれの配列に代入
+  // 日付ごとのidからinventoryカラムとinventory_copyカラムをそれぞれの配列に代入
   foreach($_POST['id'] as $id){
     $id = Measure::h($id);
     $dbh = Database::getPdo();
@@ -31,10 +31,10 @@ if(isset($_POST['id']) && isset($_POST['confirm'])){
     $ps->bindValue(':id', $id, PDO::PARAM_INT);
     $ps->execute();
     $rows = $ps->fetchAll(PDO::FETCH_ASSOC);
-  foreach($rows as $row){
-    $inventorys[] = $row['inventory'];
-    $inventory_copys[] = $row['inventory_copy'];
-  }
+    foreach($rows as $row){
+      $inventorys[] = $row['inventory'];
+      $inventory_copys[] = $row['inventory_copy'];
+    }
   }
   // 売止を押して更新するとき、inventoryに設定された値とinventory_copyに設定された値0を入れ替えてupdateがされ在庫の有無を切り替えるできる。
   foreach(array_map(null,$inventorys, $inventory_copys, $_POST['id']) as [$inventory, $inventory_copy, $set_id]){
