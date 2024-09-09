@@ -30,7 +30,7 @@
 	  if($date < date('Y-m-d')){
       $date = date('Y-m-d');
     }
-	  $dbh = Database::getPdo();
+    $dbh = Database::getPdo();
     $stmt = $dbh->prepare("SELECT * FROM singleroom WHERE day = :date");
     $stmt->bindValue(':date', $date, PDO::PARAM_STR);
     $stmt->execute();
