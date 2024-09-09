@@ -54,7 +54,7 @@ class Single{
 
   // データベースから料金を呼び出すメソッド
   public function getprice(){
-	  $dbh = Database::getPdo();
+    $dbh = Database::getPdo();
     $prices = $dbh->query("SELECT day,price FROM singleroom");
     $price_display = array();
   
@@ -80,13 +80,13 @@ class Single{
       $ps->bindValue(':type', $type, PDO::PARAM_INT);
       $ps->execute();
       $row = $ps->fetch(PDO::FETCH_ASSOC);
-    if($row == '') {
-		  $row_date = '0';
-      $sum_number = '0';
-    } else {
-		  $row_date = $row['day'];
-      $sum_number = $row['SUM(number)'];
-	  }
+      if($row == '') {
+        $row_date = '0';
+        $sum_number = '0';
+      } else {
+        $row_date = $row['day'];
+        $sum_number = $row['SUM(number)'];
+      }
       $day_out = strtotime((string)$row_date);
       $book_out = (string)$sum_number;
       $books_display[date('Y-m-d', $day_out)] = $book_out;
