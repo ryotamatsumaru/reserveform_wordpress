@@ -44,7 +44,7 @@
     }
     $type = 'singleroom';
 
-    // 在庫の残室を表示する
+    // 在庫の残室表示を分岐させる
     if(array_key_exists($date,$books_array)){
       if($inventory - $books_array[$date] == 2){
         $books_display = "<br/>"."<span class='rest2'>".'<a href="https://ro-crea.com/demo_hotel/reserve_date?dates='. $date .'&type='.$type.'">'.'残り2室'.'</a>'."</span>";
