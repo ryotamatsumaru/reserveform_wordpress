@@ -67,7 +67,7 @@
   $singles = [];
   $single = '';
 
-  // 在庫の残室を表示する
+  // 日付、料金、在庫を表示する
   foreach( $period as $ymd){
     $today = date('Y-m-d');
     $date = $ymd->format('Y-m-d');
