@@ -1,6 +1,5 @@
 <?php
 
-
 $first_year = '1960';
 $end_year = '2006';
 $first_month = '1';
