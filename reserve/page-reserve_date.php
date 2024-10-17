@@ -9,7 +9,7 @@ if(isset($_SESSION['confirm'])){
 
 require_once(__DIR__ . '/../app/measure-class.php');
 
-  // エスケープ処理をするためのメソッド
+// エスケープ処理をするためのメソッド
 if(isset($_GET['type'])){
   echo $type = Measure::h($_GET['type']);
 }
