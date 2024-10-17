@@ -71,27 +71,41 @@ if(!empty($_POST['id'])){
 
     <nav id="navi">
       <ul class="navi-area wrapper">
-        <li><a href="http://demohotel.local"><span class="en">Top</span>
-            <p class="ja">トップページ</p>
-          </a></li>
-        <li><a href="http://demohotel.local/concept"><span class="en">Concept</span>
-            <p class="ja">当館の特徴</p>
-          </a></li>
-        <li><a href="http://demohotel.local/fasility"><span class="en">Fasility</span>
-            <p class="ja">施設案内</p>
-          </a></li>
-        <li><a href="http://demohotel.local/restaurant"><span class="en">Restaurant</span>
-            <p class="ja">レストラン</p>
-          </a></li>
-        <li><a href="http://demohotel.local/roomlist"><span class="en">Room Type</span>
-            <p class="ja">お部屋一覧</p>
-          </a></li>
-        <li><a href="http://demohotel.local/#news"><span class="en">News</span>
-            <p class="ja">お知らせ</p>
-          </a></li>
-        <li><a href="http://demohotel.local/member"><span class="en">Member</span>
-            <p class="ja">会員制度</p>
-          </a></li>
+        <li>
+          <a href="http://demohotel.local"><span class="en">Top</span>
+          <p class="ja">トップページ</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/concept"><span class="en">Concept</span>
+          <p class="ja">当館の特徴</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/fasility"><span class="en">Fasility</span>
+          <p class="ja">施設案内</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/restaurant"><span class="en">Restaurant</span>
+          <p class="ja">レストラン</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/roomlist"><span class="en">Room Type</span>
+          <p class="ja">お部屋一覧</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/#news"><span class="en">News</span>
+          <p class="ja">お知らせ</p>
+          </a>
+        </li>
+        <li>
+          <a href="http://demohotel.local/member"><span class="en">Member</span>
+          <p class="ja">会員制度</p>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
