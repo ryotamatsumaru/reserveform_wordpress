@@ -14,7 +14,8 @@ require_once(dirname(dirname(__FILE__)). '/prvdtb/pdo-class.php');
 
 $list = new listKeep();
 
-if(isset($_SESSION['date']) == true && isset($_SESSION['night']) == true && isset($_SESSION['number']) == true && isset($_SESSION['random']) == true && isset($_SESSION['type']) == true){
+if(isset($_SESSION['date']) == true && isset($_SESSION['night']) == true && isset($_SESSION['number']) == true 
+   && isset($_SESSION['random']) == true && isset($_SESSION['type']) == true){
   $date = $_SESSION['date'];
   $night = $_SESSION['night'];
   $number = $_SESSION['number'];
@@ -22,15 +23,16 @@ if(isset($_SESSION['date']) == true && isset($_SESSION['night']) == true && isse
   $type = $_SESSION['type'];
   $roomtype = $_SESSION['roomtype'];
 
-if(isset($_SESSION['confirm'])){
-  unset($_SESSION['confirm']);
-  unset($_SESSION['token']);
-  echo '削除済';
-}
+  if(isset($_SESSION['confirm'])){
+    unset($_SESSION['confirm']);
+    unset($_SESSION['token']);
+    echo '削除済';
+  }
 }
 
 // 予約をリストに追加するため、必要な変数をセッション変数に格納する。
-if(isset($_POST['date']) && isset($_POST['night']) && isset($_POST['number']) && isset($_POST['random']) && isset($_POST['type']) && isset($_POST['roomtype'])){
+if(isset($_POST['date']) && isset($_POST['night']) && isset($_POST['number']) && isset($_POST['random']) 
+   && isset($_POST['type']) && isset($_POST['roomtype'])){
   $date[] = Measure::h($_POST['date']);
   $_SESSION['date'] = $date;
   $night[] = Measure::h($_POST['night']);
