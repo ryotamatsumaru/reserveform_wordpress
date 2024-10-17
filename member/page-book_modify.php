@@ -46,7 +46,7 @@ if(isset($_POST['id'])){
     $ps->execute();
     $row = $ps->fetch(PDO::FETCH_ASSOC);
     if($row == '') {
-	    $row_date = '0';
+      $row_date = '0';
       $sum_number = '0';
     } else {
       $row_date = $row['day'];
@@ -112,11 +112,11 @@ if(isset($_POST['id'])){
         <?php foreach(array_map(null, $_POST['id'],$_POST['day'],$_POST['name'],$_POST['number'],$_POST['night'],$_POST['price'], $_POST['type']) as [$id, $day, $name, $number, $night, $price, $type]): ?>
           <ul class="info-flex">
             <li class="date"><?= $day ?></li>
-	          <?php if($type == 0):?>
-	            <li class="type">シングル</li>
-	          <?php elseif($type == 1):?>
+	    <?php if($type == 0):?>
+	      <li class="type">シングル</li>
+	    <?php elseif($type == 1):?>
               <li class="type">ダブル</li>
-	          <?php endif; ?>
+	    <?php endif; ?>
             <li class="name"><?= $name ?></li>
             <li class="room"><?= $number ?>室</li>
             <li class="price">¥<?= $price ?></li>
