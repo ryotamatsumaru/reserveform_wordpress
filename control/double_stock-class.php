@@ -60,13 +60,13 @@ class doubleStock extends singleStock{
       $ps->bindValue(':type', $type, PDO::PARAM_INT);
       $ps->execute();
       $row = $ps->fetch(PDO::FETCH_ASSOC);
-	    if($row == '') {
-	      $row_date = '0';
+      if($row == '') {
+	$row_date = '0';
         $sum_number = '0';
       } else {
-	      $row_date = $row['day'];
+	$row_date = $row['day'];
         $sum_number = $row['SUM(number)'];
-	    }
+      }
       $day_out = strtotime((string)$row_date);
       $book_out = (string)$sum_number;
       $books_display[date('Y-m-d', $day_out)] = $book_out;
@@ -74,4 +74,5 @@ class doubleStock extends singleStock{
     return $books_display;
   }
 }
+
 ?>
