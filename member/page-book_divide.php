@@ -34,7 +34,7 @@ if(!empty($_POST['id'])){
       $nights[] = $row['night'];
       $prices[] = $row['price'];
       $types[] = $row['type'];
-   }
+    }
   }
 }
 ?>
